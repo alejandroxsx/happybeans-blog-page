@@ -1,4 +1,4 @@
-const url = 'https://happybeansdesign.com/wp-json/wp/v2/posts/?_embed';
+const url = 'https://happybeansdesign.com/wp-json/wp/v2/posts?per_page=100&_embed';
 $.get(url, data => {
   allPosts = data;
   displayArticles('all');
