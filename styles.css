@@ -1,0 +1,98 @@
+
+#post-display{
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.articleWrapper{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#blogTitle{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    position: relative;
+
+
+}
+#blogTitle::after{
+    content: '';
+    position: absolute;
+    background: url('https://happybeansdesign.com/wp-content/themes/oceanwp-child/images/svg/side-bean-right-purple.svg') no-repeat center center;
+    height: 50px;
+    width: 50px;
+    right: -50px;
+}
+#blogTitle::before{
+    content: '';
+    position: absolute;
+    background: url('https://happybeansdesign.com/wp-content/themes/oceanwp-child/images/svg/side-bean-left-purple.svg') no-repeat center center;
+    height: 50px;
+    width: 50px;
+    left: -50px;
+
+    }
+
+#jumbo-display{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.jumboContainer{
+    padding-top: 50px;
+    width: 44%;
+    max-width: 48%;
+    margin: 1%;
+}
+.jumboContainer span{
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+.jumbo-thumbnail{
+  width: 100%;
+}
+.post-thumbnail{
+  width: 30%;
+  margin: 10px;
+}
+img{
+
+  width: 100%;
+}
+.fadeIn{
+    opacity: 0;
+
+}
+.posts{
+    transition: all 0.5s ease;
+}
+
+.titleContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.no-display{
+  display: none;
+}
+.filter-keys span{
+  padding: 10px 20px;
+}
+
+.filter-keys{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}

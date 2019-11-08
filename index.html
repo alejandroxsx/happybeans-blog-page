@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="jquery.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+      let allPosts = [];
+  </script>
+
+  <title>Blog Page</title>
+</head>
+<body id="main-body">
+    <div class="titleContainer">
+        <h1 id="blogTitle">Blog</h1>
+    </div>
+    <div class="filter-keys">
+        <span onclick="displayArticles('all')">All</span>
+        <span onclick="displayArticles('design tips')">Design Tips</span>
+        <span onclick="displayArticles('business')">Business</span>
+        <span onclick="displayArticles('design history')">Design History</span>
+        <span onclick="displayArticles('ui & ux design')">UI & UX Design</span>
+        <span onclick="displayArticles('personal')">Personal</span>
+    </div>
+    <div class="articleWrapper">
+        <section id ="jumbo-display"></section>
+        <section id="post-display"></section>
+    </div>
+</body>
+</html>
