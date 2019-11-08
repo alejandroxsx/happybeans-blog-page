@@ -48,10 +48,12 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .jumboContainer{
     padding-top: 50px;
     width: 44%;
     max-width: 48%;
+    min-width: 300px;
     margin: 1%;
 }
 .jumboContainer span{
@@ -61,9 +63,11 @@
 }
 .jumbo-thumbnail{
   width: 100%;
+  
 }
 .post-thumbnail{
   width: 30%;
+  min-width: 300px;
   margin: 10px;
 }
 img{
@@ -95,4 +99,10 @@ img{
     display: flex;
     margin: 0 auto;
     justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  #jumbo-display {
+    justify-content: center;
+  }
 }
